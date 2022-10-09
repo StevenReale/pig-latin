@@ -1,12 +1,8 @@
 function findFirstVowel (str) {
-  let index = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (/[aeiou]/.test(str[i])) {
-      break;
-    }
-    index++;
+  for (var i = 0; i < str.length; i++) {
+    if (/[aeiou]/.test(str[i])) {break;}
   }
-  return index;
+  return i;
 }
 
 function translatePigLatin(str) {
