@@ -13,12 +13,10 @@ function translatePigLatin(str) {
   const firstVowel = findFirstVowel(str);
   console.log(firstVowel);
   if (firstVowel === 0) {
-    str += "way";
+    return str + "way";
   } else {
     return str.slice(firstVowel) + str.slice(0, firstVowel) + "ay";
   }
-
-  return str;
 }
 
-console.log(translatePigLatin("rhythm"));
+console.log(translatePigLatin("consonant"));
